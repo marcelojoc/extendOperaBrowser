@@ -1,0 +1,28 @@
+{
+	"name": "My Extension",
+	"version": "versionString",
+	"manifest_version": 3,
+
+	
+	"description": "A plain text description",
+	"developer": { 
+        
+    },
+	"icons": { 
+        
+     },
+	"default_locale": "en",
+
+	
+	"browser_action": { … },
+	"page_action": { … },
+
+	"content_scripts": [ … ],
+	"content_security_policy": "policyString",
+	"homepage_url": "http://path/to/homepage",
+	"incognito": "spanning", 
+	"key": "publicKey",
+	"minimum_opera_version": "versionString",
+	"options_page": "aFile.html"
+
+}
