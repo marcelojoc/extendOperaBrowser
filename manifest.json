@@ -1,28 +1,24 @@
 {
-	"name": "My Extension",
-	"version": "versionString",
-	"manifest_version": 3,
+	"name": "Todo List",
+	"version": "1",
+	"manifest_version": 2,
+	"description": "Extencion para generar una lista  de tareas, sincronizada con firebase",
+	"icons": {
+		"32": "img/icons/equalizer_32.png",
+		"48": "img/icons/equalizer_48.png",
+		"128": "img/icons/equalizer_128.png"
+	},
+	"background": {"scripts": ["background.js"]},
+    "developer": { "name": "Marcelo joc" },
+    "minimum_opera_version": "30",
+	"options_page": "options/options.html",
 
-	
-	"description": "A plain text description",
-	"developer": { 
-        
-    },
-	"icons": { 
-        
-     },
-	"default_locale": "en",
-
-	
-	"browser_action": { … },
-	"page_action": { … },
-
-	"content_scripts": [ … ],
-	"content_security_policy": "policyString",
-	"homepage_url": "http://path/to/homepage",
-	"incognito": "spanning", 
-	"key": "publicKey",
-	"minimum_opera_version": "versionString",
-	"options_page": "aFile.html"
+    "permissions": [
+        "storage",
+        "bookmarks",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ]
 
 }
