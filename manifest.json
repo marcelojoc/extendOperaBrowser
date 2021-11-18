@@ -15,15 +15,18 @@
 	"browser_action": {
 		"default_icon": "img/icons/equalizer_32.png",
 		"default_title": "My Sample Extension",
-		"default_popup": "popup.html"
+		"default_popup": ""
 	},
 
     "permissions": [
         "storage",
+		"contextMenus",
+		"tabs",
         "bookmarks",
         "webRequest",
         "webRequestBlocking",
         "<all_urls>"
     ]
+
 
 }
