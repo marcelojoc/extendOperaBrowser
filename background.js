@@ -64,14 +64,22 @@ chrome.browserAction.setBadgeText({
 // });
 
 
+// context menu
+// chrome.contextMenus.create({
+// 	title: 'Look up: %s',
+// 	contexts: ['selection'],
+// 	onclick: searchText
+// });
 
-chrome.contextMenus.create({
-	title: 'Look up: %s',
-	contexts: ['selection'],
-	onclick: searchText
-});
+// function searchText(info){
+// 	var myQuery = encodeURI("https://www.google.com/search?q="+info.selectionText);
+// 			chrome.tabs.create({url: myQuery});
+// }
 
-function searchText(info){
-	var myQuery = encodeURI("https://www.google.com/search?q="+info.selectionText);
-			chrome.tabs.create({url: myQuery});
+
+window.onfocus = function() {
+	console.log('The user is focussed on the panel page');
+}
+window.onblur = function() {
+	console.log('The user has left focus from the panel page');
 }

@@ -16,6 +16,10 @@
 		"default_icon": "img/icons/equalizer_32.png",
 		"default_title": "My Sample Extension",
 		"default_popup": ""
+	},"sidebar_action": {
+		"default_icon": "img/icons/equalizer_48.png",
+		"default_title": "panel de control",
+		"default_panel": "panel.html"
 	},
 
     "permissions": [
@@ -27,6 +31,7 @@
         "webRequestBlocking",
         "<all_urls>"
     ]
+	
 
 
 }
