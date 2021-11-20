@@ -4,16 +4,311 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
     <title>panel de control</title>
 </head>
 <body>
-    <TABLE BORDER>
-        <TR><TH>Head1</TH>
-            <TD>Item 1</TD> <TD>Item 2</TD> <TD>Item 3</TD></TR>
-        <TR><TH>Head2</TH>
-            <TD>Item 4</TD> <TD>Item 5</TD> <TD>Item 6</TD></TR>
-        <TR><TH>Head3</TH>
-            <TD>Item 7</TD> <TD>Item 8</TD> <TD>Item 9</TD></TR>
-    </TABLE>
+
+
+    <form class="box">
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="e.g. alex@example.com">
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" type="password" placeholder="********">
+          </div>
+        </div>
+      
+        <button class="button is-primary">Sign in</button>
+    </form>
+    <div class="modal ">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <!-- Any other Bulma elements you want -->
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Hello World</p>
+                <p class="subtitle">What is up?</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Foo</p>
+                <p class="subtitle">Bar</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Third column</p>
+                <p class="subtitle">With some content</p>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div class="box">
+        <div class="buttons">
+            <button class="button is-primary">Primary</button>
+            <button class="button is-link">Link</button>
+          </div>
+          
+          <div class="buttons">
+            <button class="button is-info">Info</button>
+            <button class="button is-success">Success</button>
+            <button class="button is-warning">Warning</button>
+            <button class="button is-danger">Danger</button>
+          </div>
+    </div>
+
+
+
+    <div class="columns is-vcentered">
+        <div class="column is-8">
+          <p class="bd-notification is-primary">First column</p>
+        </div>
+        <div class="column">
+          <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
+        </div>
+      </div>
+
+
+    <div class="container is-max-desktop">
+
+        <nav class="navbar is-info is-active">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+              </a>
+              <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" href="https://bulma.io/">
+                  Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                    Docs
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                      Overview
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                      Modifiers
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                      Columns
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                      Layout
+                    </a>
+                    <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                      Form
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                      Elements
+                    </a>
+                    <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                      Components
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="field is-grouped">
+                    <p class="control">
+                      <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                        <span>
+                          Tweet
+                        </span>
+                      </a>
+                    </p>
+                    <p class="control">
+                      <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
+                        <span class="icon">
+                          <i class="fas fa-download"></i>
+                        </span>
+                        <span>Download</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="notification is-primary">
+          This container is <strong>centered</strong> on desktop and larger viewports.
+        </div>
+
+        <div class="columns is-mobile">
+            <div class="column  is-info">1</div>
+            <div class="column  is-info">2</div>
+            <div class="column  is-info">3</div>
+            <div class="column  is-info">4</div>
+        </div>
+
+          <section class="section is-large">
+            <h1 class="title">Large section</h1>
+            <h2 class="subtitle">
+              A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+            </h2>
+          </section>
+
+        <nav class="level">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Tweets</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Following</p>
+                <p class="title">123</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Followers</p>
+                <p class="title">456K</p>
+              </div>
+            </div>
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Likes</p>
+                <p class="title">789</p>
+              </div>
+            </div>
+        </nav>
+
+
+        <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="https://bulma.io/images/placeholders/128x128.png">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <div class="media-right">
+              <button class="delete"></button>
+            </div>
+          </article>
+
+
+
+          <article class="panel is-danger">
+            <p class="panel-heading">
+              Danger
+            </p>
+            <p class="panel-tabs">
+              <a class="is-active">All</a>
+              <a>Public</a>
+              <a>Private</a>
+              <a>Sources</a>
+              <a>Forks</a>
+            </p>
+            <div class="panel-block">
+              <p class="control has-icons-left">
+                <input class="input is-danger" type="text" placeholder="Search">
+                <span class="icon is-left">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </span>
+              </p>
+            </div>
+            <a class="panel-block is-active">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              bulma
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              marksheet
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              minireset.css
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              jgthms.github.io
+            </a>
+          </article>
+
+
+
+
+          <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+              </p>
+            </div>
+          </footer>
+
+    </div>
+
+
+    
+
 </body>
 </html>

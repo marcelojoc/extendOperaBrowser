@@ -75,11 +75,48 @@ chrome.browserAction.setBadgeText({
 // 	var myQuery = encodeURI("https://www.google.com/search?q="+info.selectionText);
 // 			chrome.tabs.create({url: myQuery});
 // }
+chrome.commands.onCommand.addListener(function(command) {
+
+	alert('Arranco con un tiki y con un par  de lobas-.,.,.,,.,..');
+	if (command == 'test') {
+		alert('Keyboard shortcut from extension worked!');
+	}else{
+
+		alert('Arranco con un tiki y con un par  de lobas-.,.,.,,.,..');
+	}
+});
 
 
-window.onfocus = function() {
-	console.log('The user is focussed on the panel page');
-}
-window.onblur = function() {
-	console.log('The user has left focus from the panel page');
-}
+
+
+chrome.omnibox.onInputChanged.addListener(
+	function(text, suggest) {
+		var suggestionsList = [
+			{
+				'content': 'https://dev.opera.com/search/?q=' + encodeURIComponent(text),
+				'description': 'Search Opera Extensions Documentation'
+			},
+			{
+				'content': 'http://stackoverflow.com/search?q=' +
+					encodeURIComponent(
+						'[opera-extension] ' + text
+					),
+				'description': 'Do a Stack Overflow Search'
+			},
+			{
+				'content': 'https://www.google.com/search?q=' + encodeURIComponent(text),
+				'description': 'Search on Google'
+			}
+		];
+
+		chrome.omnibox.setDefaultSuggestion({
+			'description': suggestionsList[0].description
+		});
+
+		// First suggestion is already shown by default
+		// because we used `setDefaultSuggestion`,
+		// so we delete it from the array
+		suggestionsList.shift();
+		suggest(suggestionsList);
+	}
+);

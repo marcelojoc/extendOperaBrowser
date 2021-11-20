@@ -4,6 +4,7 @@
 	"manifest_version": 2,
 	"description": "Extencion para generar una lista  de tareas, sincronizada con firebase",
 	"icons": {
+		"16": "img/icons/water_m_icon.png",
 		"32": "img/icons/equalizer_32.png",
 		"48": "img/icons/equalizer_48.png",
 		"128": "img/icons/equalizer_128.png"
@@ -20,6 +21,19 @@
 		"default_icon": "img/icons/equalizer_48.png",
 		"default_title": "panel de control",
 		"default_panel": "panel.html"
+	},
+	"omnibox": {
+		"keyword": "perro"
+	},
+
+	"commands": {
+		"test": {
+			"suggested_key": {
+				"default": "Ctrl+J",
+				"mac": "Command+J"
+			},
+			"description": "Test alert function"
+		}
 	},
 
     "permissions": [
